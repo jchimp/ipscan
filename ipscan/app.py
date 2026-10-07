@@ -19,9 +19,9 @@ from textual.widgets import (
     Static,
 )
 
-from ipscanner import __version__, export
-from ipscanner.netinfo import Subnet, local_subnets, parse_range
-from ipscanner.scanner import (
+from ipscan import __version__, export
+from ipscan.netinfo import Subnet, local_subnets, parse_range
+from ipscan.scanner import (
     STATUS_ARP, STATUS_OFFLINE, STATUS_ONLINE, STATUS_PENDING, Host, scan,
 )
 

@@ -9,7 +9,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Iterable
 
-from ipscanner.scanner import Host
+from ipscan.scanner import Host
 
 FIELDS = ("ip", "status", "latency_ms", "fqdn", "mac", "vendor")
 FORMATS = ("csv", "json", "html")

@@ -12,9 +12,9 @@ from dataclasses import dataclass
 from ipaddress import IPv4Address
 from typing import Callable
 
-from ipscanner import oui
-from ipscanner.netinfo import arp_table
-from ipscanner.rdns import ptr_lookup, system_nameservers
+from ipscan import oui
+from ipscan.netinfo import arp_table
+from ipscan.rdns import ptr_lookup, system_nameservers
 
 _IS_WINDOWS = sys.platform.startswith("win")
 
