@@ -1,3 +1,3 @@
-"""ipscanner - text-mode IP range scanner."""
+"""ipscan - text-mode IP range scanner."""
 
 __version__ = "0.1.0"

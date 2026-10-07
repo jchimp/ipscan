@@ -1,4 +1,4 @@
-"""Textual TUI for ipscanner."""
+"""Textual TUI for ipscan."""
 
 from __future__ import annotations
 
