@@ -1,4 +1,4 @@
-# ipscanner
+# ipscan
 
 A fast, keyboard-driven IP range scanner that runs in your terminal.
 
@@ -6,7 +6,7 @@ Point it at a subnet and it finds every live host, then shows the hostname, MAC 
 and hardware vendor for each one. Filter the results as you type, copy any value to the
 clipboard, or export the whole table to CSV, JSON or a self-contained HTML page.
 
-**No admin rights needed.** ipscanner drives the system `ping` command and reads the OS
+**No admin rights needed.** ipscan drives the system `ping` command and reads the OS
 ARP table, so it works on a normal user account on Windows, macOS and Linux.
 
 ## Features
@@ -40,10 +40,10 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 Close and reopen your terminal after the install so `uv` is on your PATH.
 
-### 2. Install ipscanner
+### 2. Install ipscan
 
 ```sh
-uv tool install git+https://github.com/jchimp/ipscanner.git
+uv tool install git+https://github.com/jchimp/ipscan.git
 ```
 
 This installs the `ipscan` command in its own isolated environment. Check it works:
@@ -58,8 +58,8 @@ ipscan --version
 ### Upgrade or remove
 
 ```sh
-uv tool upgrade ipscanner
-uv tool uninstall ipscanner
+uv tool upgrade ipscan
+uv tool uninstall ipscan
 ```
 
 ## Usage
@@ -110,8 +110,8 @@ The HTML file is self-contained and has click-to-sort headers.
 ## Development
 
 ```sh
-git clone https://github.com/jchimp/ipscanner.git
-cd ipscanner
+git clone https://github.com/jchimp/ipscan.git
+cd ipscan
 uv sync --extra dev
 uv run ipscan
 uv run pytest
@@ -125,7 +125,7 @@ uv tool install --editable .
 
 ### Refresh the MAC vendor table
 
-`ipscanner/data/oui.csv` is generated from the IEEE OUI registry. To refresh it:
+`ipscan/data/oui.csv` is generated from the IEEE OUI registry. To refresh it:
 
 ```sh
 uv run python scripts/update_oui.py        # add --dry-run to only fetch and count
